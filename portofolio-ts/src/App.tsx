@@ -12,18 +12,14 @@ const App: React.FC = () => {
   const [isLargeScreen, setIsLargeScreen] = useState(false);
 
   useEffect(() => {
-    // Function to check if screen is large enough for snap scrolling
     const checkScreenSize = () => {
-      setIsLargeScreen(window.innerWidth >= 768); // 768px is typical md breakpoint
+      setIsLargeScreen(window.innerWidth >= 768);
     };
     
-    // Check on initial load
     checkScreenSize();
     
-    // Add event listener for window resize
     window.addEventListener('resize', checkScreenSize);
     
-    // Cleanup event listener
     return () => window.removeEventListener('resize', checkScreenSize);
   }, []);
 
