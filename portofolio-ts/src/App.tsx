@@ -24,7 +24,7 @@ const App: React.FC = () => {
   }, []);
 
   return (
-    <div className={`bg-[#1a1a1a] text-[#e0b0ff] ${isLargeScreen ? 'snap-y snap-mandatory' : ''} overflow-y-scroll h-screen`}>
+    <div className={`text-[#fafafa] ${isLargeScreen ? 'snap-y snap-mandatory' : ''} overflow-y-scroll h-screen`}>
       <main>
         <section className={`${isLargeScreen ? 'h-screen snap-center' : 'min-h-screen py-4'}`} id="home" aria-label="Home Section">
           <Navbar />

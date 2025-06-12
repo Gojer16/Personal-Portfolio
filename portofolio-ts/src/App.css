@@ -8,3 +8,16 @@ h1, h2, h3, h4, h5, h6 {
 p {
     @apply font-[open-sans]
 }
+
+
+body {
+background: linear-gradient(600deg, #0047ab, #8a2be2, #8a2be2); 
+min-height: 100vh;
+  width: 100%;
+}
+
+@theme {
+    --color-primary: #fafafa;
+    --color-secondary: #cbd5e1;
+}
+

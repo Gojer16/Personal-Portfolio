@@ -1,0 +1,14 @@
+.navbar {
+    background: rgba(0, 0, 0, 0.4);
+    backdrop-filter: blur(8px);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    position: fixed;
+    top: 0;
+    left: 0; 
+    width: 100%; 
+    opacity: 1;
+    transform: translateY(0); 
+    transition: opacity 0.3s ease-out, transform 0.3s ease-out; 
+    width: calc(100% - 15px)
+}
+

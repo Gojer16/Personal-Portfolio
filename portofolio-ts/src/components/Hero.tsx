@@ -7,7 +7,7 @@ interface HeroProps {}
 
 const Hero: React.FC<HeroProps> = () => {
   return (
-    <section className="h-11/12 bg-[linear-gradient(180deg,#4a227d_0%,#6a44b2_50%,#1a1a1a_100%)]">
+    <section className="h-11/12 ">
       <div className="grid justify-center pt-8">
         <button
           className="bg-[#6f42c1] p-2 rounded-2xl flex items-center gap-2 cursor-pointer
