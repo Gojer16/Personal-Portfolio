@@ -2,7 +2,6 @@ import React from "react";
 import { MdOutlineKeyboardDoubleArrowRight } from "react-icons/md";
 import { FaCode } from "react-icons/fa6";
 
-// Define Props Interface (optional, for future extensibility)
 interface HeroProps {}
 
 const Hero: React.FC<HeroProps> = () => {
