@@ -2,52 +2,49 @@ import React from 'react';
 import Card from './Card';
 import { IoPersonOutline } from "react-icons/io5";
 
-// Define Props Interface (if any props were to be passed to About in the future)
 interface AboutProps {}
 
 const About: React.FC<AboutProps> = () => {
   return (
-    <>
-      <section className="">
-        <div className="pt-20 sm:pt-28 md:pt-40 pl-4 sm:pl-8 md:pl-12 pb-2 sm:pb-4">
-          <p className="text-[0.8rem] sm:text-[0.85rem] md:text-[0.9rem] flex gap-1 font-extralight">
-            <IoPersonOutline className="text-xl sm:text-2xl text-[#e0b0ff] hover:text-white" />
-            About Me
+    <section className="w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 sm:py-28 md:py-36">
+      <div className="flex items-center gap-2 text-sm sm:text-base text-secondary font-light mb-2 sm:mb-3">
+        <IoPersonOutline className="text-xl sm:text-2xl" />
+        <span>About Me</span>
+      </div>
+      <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-primary mb-10">
+        Code With Purpose. Impact With Heart.
+      </h2>
+
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-10 items-start">
+        <div className="space-y-5 text-[0.95rem] sm:text-base text-gray-200">
+          <p>
+            I’m not just a developer—I’m a builder of tools that solve problems and elevate people.
+            My mission is to turn code into a catalyst for freedom, clarity, and progress.
           </p>
-        </div>
+          <p>
+            From backend systems to user-focused features, I focus on <strong>simplicity, scalability,</strong> and real-world utility. 
+            I'm not here to vibe code—I break down, reflect, and refine until I own the craft.
+          </p>
+          <p>
+            Whether you're building your next product or streamlining internal processes, I bring
+            <strong> engineering thinking</strong> and <strong>heart-led execution</strong> to the table.
+          </p>
 
-        <div className="pl-4 sm:pl-8 md:pl-12 pb-4 sm:pb-6 md:pb-8">
-          <h1 className="text-[1.5rem] sm:text-[1.75rem] md:text-[2rem] font-bold">Crafting Solutions That Empower</h1>
-        </div>
-
-        <div className="flex flex-col md:flex-row md:justify-end pr-2 sm:pr-4 md:pr-6">
-          <div className="px-4 sm:px-6 md:pl-10 md:pr-2">
-            <p className="text-[0.9rem] sm:text-[0.95rem] md:text-[1rem] p-2">
-            I'm a developer who thrives on <strong>solving real-world problems</strong> with clean, efficient code. 
-            My passion lies in building tools that <strong>simplify lives</strong> and <strong>spark innovation.</strong>
-            </p>
-            <p className="text-[0.9rem] sm:text-[0.95rem] md:text-[1rem] p-2">
-            Whether it's automating workflows or exploring emerging tech, I'm driven by a desire to 
-            <strong> make technology accessible</strong> and <strong>impactful</strong>. Let's create something meaningful <strong>together.</strong>
-            </p>
-            <button  
-              aria-label="Buy me a cookie"
-              href="/portfolio"
-              className="bg-[#9B4AFF] text-white px-3 sm:px-4 py-1.5 sm:py-2 m-2 rounded-2xl mt-3 sm:mt-4 inline-block 
-              cursor-pointer hover:bg-[#5a32a3] active:bg-[#4a227d] transition-all duration-200 
+          <a  
+            aria-label="Buy me a cookie"
+            href='https://www.paypal.com/paypalme/orlandodev'
+            className=" text-primary px-4 py-2 inline-block rounded-2xl mt-2 sm:mt-4 
+              cursor-pointer hover:bg-[#5a32a3]  transition-all duration-200 
               shadow-md border-2 hover:scale-105 text-sm sm:text-base"
-            >
-              Buy me a 🍪cookie! 
-            </button>
-          </div>
-
-          {/* Card component with responsive margin */}
-          <div className="mx-auto md:mx-0 mt-6 md:mt-0">
-            <Card />
-          </div>
+          >
+            🍪 Buy me a cookie
+          </a>
         </div>
-      </section>
-    </>
+        <div className="w-full flex justify-center md:justify-end">
+          <Card />
+        </div>
+      </div>
+    </section>
   );
 };
 

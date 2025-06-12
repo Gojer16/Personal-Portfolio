@@ -1,14 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700&display=swap');
 @import "tailwindcss";
 
 
-h1, h2, h3, h4, h5, h6 {
+h1, h2, h3, h4, h5, h6, p {
     @apply font-[Raleway];
 }
-
-p {
-    @apply font-[open-sans]
-}
-
 
 body {
 background: linear-gradient(600deg, #0047ab, #8a2be2, #8a2be2); 

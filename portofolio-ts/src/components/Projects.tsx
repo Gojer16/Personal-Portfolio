@@ -1,11 +1,7 @@
 import React from 'react';
 import CardProjects from './CardProjects';
 import { MdOutlineWorkOutline } from "react-icons/md";
-import myImage from '../assets/2.jpg';
-import myImage2 from '../assets/3.jpg';
-import myImage3 from '../assets/4.jpg';
 
-// Define types for the props being passed to CardProjects component
 interface Projects {
   img: string;
   link: string;
@@ -20,7 +16,7 @@ const Projects: React.FC = () => {
       <div>
         <div className='pt-20 pl-8'>
           <h2 className='flex gap-2 text-[2rem] font-extralight '>
-            <MdOutlineWorkOutline className='text-[2rem] text-[#e0b0ff] hover:text-white mt-2'/>
+            <MdOutlineWorkOutline className='text-[2rem] text-secondary hover:text-primary mt-2'/>
             Projects
           </h2>
         </div>
@@ -28,28 +24,28 @@ const Projects: React.FC = () => {
           <h1 className='text-[2rem] font-bold'>Featured Projects</h1>
         </div>
         <div className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 pt-4 px-4'>
-          <CardProjects 
-            img={myImage}
-            link='orlandoascanio.com'
-            title='Next.js Application To-Do-List'
-            description='A sleek and responsive task management app built with Next.js, designed to help users organize their tasks efficiently.'
-            tech={['React.js, ShadCN, Supabase']}
+          <CardProjects
+            img='/1.png' 
+            link='https://portfolio-orlandos-projects-8aa08152.vercel.app/'
+            title='Personal Portfolio'
+            description='Personal Portfolio built React, Framer Motion and TailwindCSS. Showing off my projects, values as a developer ready for global opportunities.'
+            tech={['React, Framer Motion, TailwindCSS']}
           />
 
-          <CardProjects 
-            img={myImage2}
-            link='orlandoascanio.com'
-            title='React.js Application To-Do-List'
-            description='This app of react.js was actually really cool!'
-            tech={['Next.js, TailwindCSS, Firebase']}
+          <CardProjects
+            img='/2.png'
+            link='https://v0-weather-app-pi-three.vercel.app/'
+            title='Real-time weather dashboard'
+            description='A real-time weather dashboard that auto-detects your location and displays current weather information.'
+            tech={['React, TailwindCSS, API']}
           />
 
-          <CardProjects 
-            img={myImage3}
-            link='orlandoascanio.com'
-            title='Full-Stack Application To-Do-List'
-            description='A sleek and responsive task management app built with Next.js, designed to help users organize their tasks efficiently.'
-            tech={['React.js, TailwindCSS, Firebase']}
+          <CardProjects
+            img='/3.png'
+            link='https://pagina-escuela-seven.vercel.app/'
+            title='Full-stack institutional website'
+            description='A full-stack institutional website for a technical school, built with React, Framer Motion, TailwindCSS, and FastAPI.'
+            tech={['React, Framer Motion, MySQL, FastAPI']}
           />
         </div>
       </div>

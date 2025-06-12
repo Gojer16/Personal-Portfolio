@@ -11,8 +11,8 @@ interface Skills {
 const Skills: React.FC = () => {
   return (
     <>
-        <div className='flex justify-center p-6 sm:p-8 md:p-10 lg:p-12 '>
-            <p className="text-[0.875rem] sm:text-[1rem] flex font-extralight gap-2 ">
+        <div className='flex justify-center  sm:p-8 md:p-10 lg:p-12 '>
+            <p className="text-[0.875rem] pt-14 sm:text-[1rem] flex font-extralight gap-2 ">
                 <FaTools className='hover:text-white mt-1 hover:scale-110'/>
                 Skills
             </p>
@@ -22,22 +22,22 @@ const Skills: React.FC = () => {
         </div>
         <div className='mt-10 sm:mt-14 md:mt-16 lg:mt-20 px-4 sm:px-6 md:px-8 lg:px-10'>
             <SkillsCard 
-            name='Front-End Development'
-            porcetage={70}
+            name='Back-End Development'
+            porcetage={75}
             />
             <SkillsCard 
-            name='Back-End Development'
+            name='Front-End Development'
             porcetage={60}
             />
 
             <SkillsCard 
             name="Database"
-            porcetage={20}
+            porcetage={50}
             />
 
             <SkillsCard 
             name="DevOps"
-            porcetage={10}
+            porcetage={30}
             />
         </div>
     </>

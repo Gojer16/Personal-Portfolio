@@ -1,34 +1,36 @@
 import React from 'react';
-import { FaCode } from "react-icons/fa6";
-import { FaFigma } from "react-icons/fa";
+import { FaCode, FaFigma } from "react-icons/fa6";
 import { AiOutlineCode } from "react-icons/ai";
 
-// Define Props Interface (even if it's empty for now)
-interface CardProps {
-
-}
+interface CardProps {}
 
 const Card: React.FC<CardProps> = () => {
   return (
-    <>
-      <article className="bg-[#9B4AFF] text-white w-[280px] sm:w-[320px] md:w-[350px] rounded-2xl bg-gradient-to-r from-[#9B4AFF] to-[#6F42C1] hover:scale-105 transition-all duration-200 shadow-md">
-        <h1 className="text-[1.5rem] sm:text-[1.75rem] md:text-[2rem] font-bold p-1 m-2 sm:m-3">Core Skills</h1>
-        <div className="pl-3 sm:pl-4 pb-2 sm:pb-3 md:pb-4">
-          <h2 className="text-[0.9rem] sm:text-[1rem] pb-1 flex gap-2 font-bold items-center">
-            <FaCode className="text-xl sm:text-2xl text-white" />
-            Front-End Development
-          </h2>
-          <h2 className="text-[0.9rem] sm:text-[1rem] pb-1 flex gap-2 font-bold items-center">
-            <FaFigma className="text-xl sm:text-2xl text-white" />
-            UI/UX Design
-          </h2>
-          <h2 className="text-[0.9rem] sm:text-[1rem] pb-1 sm:pb-2 flex gap-2 font-bold items-center">
-            <AiOutlineCode className="text-xl sm:text-2xl text-white" />
-            Back-End Development
-          </h2>
+    <article className="bg-gradient-to-br from-[#9B4AFF] to-[#6F42C1] text-white rounded-2xl shadow-lg w-[280px] sm:w-[320px] md:w-[360px] p-6 space-y-5 transform hover:scale-105 transition-all duration-300 ease-in-out">
+      <h2 className="text-xl sm:text-2xl font-bold border-b border-white/20 pb-2">
+        Core Skills
+      </h2>
+      <div className="space-y-4">
+        <div className="flex items-center gap-3">
+          <FaCode className="text-2xl text-white" />
+          <span className="text-base sm:text-lg font-medium">
+            Backend Architecture & API Engineering
+          </span>
         </div>
-      </article>
-    </>
+        <div className="flex items-center gap-3">
+          <FaFigma className="text-2xl text-white" />
+          <span className="text-base sm:text-lg font-medium">
+            Front-End Development & Responsive Design
+          </span>
+        </div>
+        <div className="flex items-center gap-3">
+          <AiOutlineCode className="text-2xl text-white" />
+          <span className="text-base sm:text-lg font-medium">
+            Full-Stack Development & Code Optimization
+          </span>
+        </div>
+      </div>
+    </article>
   );
 };
 
